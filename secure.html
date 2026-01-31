@@ -13,18 +13,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqua MFA - Hub</title>
-
-    <!-- Link preview (Discord/etc) -->
-    <link rel="canonical" href="https://watchdog.gay/aqua">
-    <meta name="theme-color" content="#0066ff">
-
-    <meta property="og:site_name" content="Watchdog.gay">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="watchdog.gay">
-    <meta property="og:description" content="Your guide to cheating, made with love.">
-    <meta property="og:url" content="https://watchdog.gay/aqua">
-    <meta property="og:image" content="https://watchdog.gay/files/wd.png">
+    <title>Aqua MFA - Securing your MFA</title>
 
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
 
@@ -76,6 +65,12 @@
             font-size: 1.05rem;
         }
 
+        .grand {
+            color: #fff;
+            font-size: 1.9rem;
+            margin-bottom: 0.35rem;
+        }
+
         ul {
             list-style: none;
             padding-left: 0;
@@ -102,7 +97,7 @@
             text-shadow: 0 0 15px #0066ff, 0 0 25px #00ccff;
         }
 
-        /* Hover button items - matching expandable section style */
+        /* Hover button items */
         .step {
             cursor: pointer;
             margin: 0.3rem 0;
@@ -187,70 +182,6 @@
         .one-line {
             height: 1.5rem;
         }
-
-        /* Expanding items style - matching .step button style */
-        details.expand-item {
-            cursor: pointer;
-            margin: 0.3rem 0;
-            border-left: 2px solid #333;
-            padding-left: 0.5rem;
-            transition: background 0.2s, box-shadow 0.2s, padding-left 0.2s, border-color 0.2s;
-        }
-
-        details.expand-item summary {
-            cursor: pointer;
-            font-weight: bold;
-            user-select: none;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-        }
-
-        details.expand-item summary::before {
-            content: "▸ ";
-            display: inline-block;
-            transition: transform 0.2s;
-            margin-right: 0.3rem;
-        }
-
-        details.expand-item[open] summary::before {
-            transform: rotate(90deg);
-        }
-
-        details.expand-item:hover {
-            background: rgba(0, 102, 255, 0.15);
-            box-shadow: 0 0 10px rgba(0, 102, 255, 0.3);
-            padding-left: 1rem;
-            border-color: #0066ff;
-        }
-
-        details.expand-item[open] summary {
-            margin-bottom: 0.5rem;
-        }
-
-        details.expand-item> :not(summary) {
-            animation: slideDown 0.2s ease-out;
-        }
-
-        .expand-content {
-            padding: 0.5rem 0 0.5rem 1rem;
-            border-left: 2px solid #0066ff;
-            margin-left: 0.5rem;
-            font-size: 0.95rem;
-            color: #ccc;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                max-height: 0;
-            }
-
-            to {
-                opacity: 1;
-                max-height: 500px;
-            }
-        }
     </style>
 </head>
 
@@ -259,70 +190,32 @@
 
         <h1>AQUA MFA</h1>
         <div class="section">
-            <div>By <l class="khadow">Khadow </l>with love</div>
+            <div>Made with love</div>
         </div>
 
         <!-- ==================== [ad] ==================== -->
         <div class="section">
             <div class="section-title">
-                <a2 href="https://discord.gg/aquamfa" target="_self">[join us on Discord]</a2>
+                <a2 href="https://mfa.watchdog.gay" target="_self">[join us on Discord]</a2>
             </div>
             <div class="one-line"></div>
         </div>
 
 
-        <!-- ==================== [fix auth] ==================== -->
-        <div class="section">
-
-            <div class="section-title">[Informations]</div>
-            <div>Aqua mfa is a marketplace where you can both buy AND sell accounts</div>
-        </div>
-
         <!-- ==================== [How to format tokens] ==================== -->
 
 
-        <details class="expand-item">
-            <summary>[payment methods]</summary>
-            <div class="expand-content">
-                <div>We accept cryptocurrencies most cryptocurrencies (ltc/eth/sol/usdt...)</div>
-                <div>If you cannot use crypto for any reason, we also take giftmecrypto gift cards</div>
-                <div style="margin-top: 0.5rem;">See more infos about this (where to get them, fees, etc) <a2
-                        href="giftmecrypto.html" target="_self">
-                        [here]</a2>
-                </div>
-            </div>
-        </details>
-
-
-
-        <details class="expand-item">
-            <summary>[how to purchase an account]</summary>
-            <div class="expand-content">
-                <div>There is nothing simpler - Open a ticket on our <a2 href="https://discord.gg/aquamfa"
-                        target="_self">discord</a2>
-                </div>
-            </div>
-        </details>
-
-        <details class="expand-item">
-            <summary>[how to sell or proxy your own account]</summary>
-            <div class="expand-content">
-                <div>If you wish to get rid of an account of yours, we offer 2 solutions for $$$</div>
-                <div style="margin-top: 0.5rem;">1: PROXY (fee:10%) : We list your account and act as a middleman</div>
-                <div>2: SELL : We directly buy your account to resell it later</div>
-            </div>
-        </details>
-
-        <!-- ==================== [security] ==================== -->
         <div class="section">
-            <div class="section-title">[our guides]</div>
-            <div class="step" data-href="secure.html">
-                <div class="step-title">How to secure your account</div>
-                <div class="step-desc">Read our detailed guide to ensure you never lose access after purchasing</div>
+            <div class="one-line"></div>
+            <div class="grand">Go to Minecraft.net and click "login" - <a2 href="/files/aqua/step2.html" target="_self">
+                    next
+                    step</a2>
             </div>
+            <div class="one-line"></div>
+            <img src="files/aqua/step1.jpg" alt="">
+
+
         </div>
-
-
 
 
         <!-- ==================== [contact] ==================== -->
@@ -332,7 +225,7 @@
             </div>
             <div style="margin-top:0.6rem;">
                 <img src="https://cdn-icons-png.flaticon.com/32/5968/5968756.png" alt="Discord" class="logo">
-                <a2 href="https://discord.gg/aquamfa" target="_self">https://discord.gg/aquamfa</a2>
+                <a2 href="https://mfa.watchdog.gay" target="_self">https://discord.gg/sNdMBubnYB</a2>
             </div>
         </div>
 
@@ -350,15 +243,6 @@
     </div>
 
     <script>
-        document.querySelectorAll('.step').forEach(step => {
-            step.addEventListener('click', function () {
-                const href = this.getAttribute('data-href');
-                if (href) {
-                    window.location.href = href;
-                }
-            });
-        });
-
         // Handle a2 tag navigation
         document.querySelectorAll('a2').forEach(link => {
             link.addEventListener('click', function () {
